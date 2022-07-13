@@ -20,6 +20,7 @@
 		C3828BB2287DB25E0040D3F4 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3828BB1287DB25E0040D3F4 /* MainPresenter.swift */; };
 		C3828BB5287DB9FE0040D3F4 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3828BB4287DB9FE0040D3F4 /* MainViewController.xib */; };
 		C3828BB7287EBF640040D3F4 /* ModulBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3828BB6287EBF640040D3F4 /* ModulBuilder.swift */; };
+		C3828BBB287EE5B00040D3F4 /* MainPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3828BBA287EE5B00040D3F4 /* MainPresenterTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		C3828BB1287DB25E0040D3F4 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		C3828BB4287DB9FE0040D3F4 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		C3828BB6287EBF640040D3F4 /* ModulBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModulBuilder.swift; sourceTree = "<group>"; };
+		C3828BBA287EE5B00040D3F4 /* MainPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenterTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,16 +109,13 @@
 		C3828B7C287DB1E80040D3F4 /* MVP Pattern */ = {
 			isa = PBXGroup;
 			children = (
-				C3828BB3287DB9DA0040D3F4 /* View */,
-				C3828BB0287DB2430040D3F4 /* Presentor */,
-				C3828BAD287DB1F60040D3F4 /* Model */,
+				C3828BB9287EE54A0040D3F4 /* MainModule */,
 				C3828B7D287DB1E80040D3F4 /* AppDelegate.swift */,
 				C3828B7F287DB1E80040D3F4 /* SceneDelegate.swift */,
 				C3828B83287DB1E80040D3F4 /* Main.storyboard */,
 				C3828B86287DB1EC0040D3F4 /* Assets.xcassets */,
 				C3828B88287DB1EC0040D3F4 /* LaunchScreen.storyboard */,
 				C3828B8B287DB1EC0040D3F4 /* Info.plist */,
-				C3828BB6287EBF640040D3F4 /* ModulBuilder.swift */,
 			);
 			path = "MVP Pattern";
 			sourceTree = "<group>";
@@ -124,6 +123,7 @@
 		C3828B93287DB1ED0040D3F4 /* MVP PatternTests */ = {
 			isa = PBXGroup;
 			children = (
+				C3828BB8287EE5330040D3F4 /* TestMainModule */,
 				C3828B94287DB1ED0040D3F4 /* MVP_PatternTests.swift */,
 			);
 			path = "MVP PatternTests";
@@ -157,10 +157,29 @@
 		C3828BB3287DB9DA0040D3F4 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				C3828B81287DB1E80040D3F4 /* MainViewController.swift */,
 				C3828BB4287DB9FE0040D3F4 /* MainViewController.xib */,
+				C3828B81287DB1E80040D3F4 /* MainViewController.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		C3828BB8287EE5330040D3F4 /* TestMainModule */ = {
+			isa = PBXGroup;
+			children = (
+				C3828BBA287EE5B00040D3F4 /* MainPresenterTest.swift */,
+			);
+			path = TestMainModule;
+			sourceTree = "<group>";
+		};
+		C3828BB9287EE54A0040D3F4 /* MainModule */ = {
+			isa = PBXGroup;
+			children = (
+				C3828BB6287EBF640040D3F4 /* ModulBuilder.swift */,
+				C3828BAD287DB1F60040D3F4 /* Model */,
+				C3828BB0287DB2430040D3F4 /* Presentor */,
+				C3828BB3287DB9DA0040D3F4 /* View */,
+			);
+			path = MainModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,6 +328,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3828B95287DB1ED0040D3F4 /* MVP_PatternTests.swift in Sources */,
+				C3828BBB287EE5B00040D3F4 /* MainPresenterTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
