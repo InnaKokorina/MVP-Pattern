@@ -9,40 +9,47 @@ import XCTest
 @testable import MVP_Pattern
 
 class MockView: MainViewProtocol {
-    var titleTest: String?
-    func setGreeting(greeting: String) {
-        self.titleTest = greeting
+    func success() {
+       
     }
+    
+    func failure(error: Error) {
+        self.titleTest = error.localizedDescription
+    }
+    
+    var titleTest: String?
     
     
 }
 class MainPresenterTest: XCTestCase {
     var view: MockView!
-    var person: Person!
+    var comment: Comment!
     var presenter: MainPresenter!
+    var networkService: NetworkService!
     
     override func setUpWithError() throws {
         view = MockView()
-        person = Person(firstName: "Baz", lastName: "Bar")
-        presenter = MainPresenter(view: view, person: person)
+        comment = Comment(postId: 1, id: 1, name: "Baz", email: "Bar", body: "BazBar")
+        networkService = NetworkService()
+        presenter = MainPresenter(view: view, networkService: networkService)
     }
 
     override func tearDownWithError() throws {
         view = nil
-        person = nil
+        comment = nil
         presenter = nil
     }
     func testModuleIsNotNil() {
         XCTAssertNotNil(view, "View is not nil")
-        XCTAssertNotNil(person, "Person is not nil")
+        XCTAssertNotNil(comment, "Comment is not nil")
         XCTAssertNotNil(presenter, "Presenter is not nil")
     }
-    func testView() {
-        presenter.showGreeting()
-        XCTAssertEqual(view.titleTest, "Hello Baz Bar")
-    }
+//    func testView() {
+//        presenter.getComments()
+//        XCTAssertEqual(view.titleTest, "Hello Baz Bar")
+//    }
     func testPersonModel() {
-        XCTAssertEqual(person.firstName, "Baz")
-        XCTAssertEqual(person.lastName, "Bar")
+        XCTAssertEqual(comment.name, "Baz")
+        XCTAssertEqual(comment.email, "Bar")
     }
 }

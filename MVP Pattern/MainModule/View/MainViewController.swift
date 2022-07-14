@@ -33,6 +33,11 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
         cell.textLabel?.text = comment?.body
         return cell
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let comment = presenter.comments?[indexPath.row]
+        let detailVC = ModulBuilder.createDetail(comment: comment)
+        navigationController?.pushViewController(detailVC, animated: true)
+    }
     
    
 }
