@@ -35,8 +35,7 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let comment = presenter.comments?[indexPath.row]
-        let detailVC = ModulBuilder.createDetail(comment: comment)
-        navigationController?.pushViewController(detailVC, animated: true)
+        presenter.tapOnTheComment(comment: comment)
     }
     
    

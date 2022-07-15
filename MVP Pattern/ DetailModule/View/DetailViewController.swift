@@ -17,6 +17,9 @@ class DetailViewController: UIViewController {
         presenter.setComment()
     }
 
+    @IBAction func backTapped(_ sender: Any) {
+        presenter.tapBack()
+    }
 }
 extension DetailViewController: DetailViewProtocol {
     func showComment(comment: Comment?) {

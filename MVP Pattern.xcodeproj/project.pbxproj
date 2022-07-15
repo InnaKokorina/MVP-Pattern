@@ -25,6 +25,7 @@
 		C3828BC128802C6D0040D3F4 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3828BC028802C6D0040D3F4 /* DetailPresenter.swift */; };
 		C3828BC628803EC70040D3F4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3828BC428803EC70040D3F4 /* DetailViewController.swift */; };
 		C3828BC728803EC70040D3F4 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3828BC528803EC70040D3F4 /* DetailViewController.xib */; };
+		C3ED201C28804AC1009F5D7F /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3ED201B28804AC1009F5D7F /* Router.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		C3828BC028802C6D0040D3F4 /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
 		C3828BC428803EC70040D3F4 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		C3828BC528803EC70040D3F4 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		C3ED201B28804AC1009F5D7F /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 		C3828B7C287DB1E80040D3F4 /* MVP Pattern */ = {
 			isa = PBXGroup;
 			children = (
+				C3ED201B28804AC1009F5D7F /* Router.swift */,
 				C3828BB6287EBF640040D3F4 /* ModulBuilder.swift */,
 				C3828B7D287DB1E80040D3F4 /* AppDelegate.swift */,
 				C3828B7F287DB1E80040D3F4 /* SceneDelegate.swift */,
@@ -361,6 +364,7 @@
 			files = (
 				C3828BC628803EC70040D3F4 /* DetailViewController.swift in Sources */,
 				C3828BBE287F009D0040D3F4 /* NetworkService.swift in Sources */,
+				C3ED201C28804AC1009F5D7F /* Router.swift in Sources */,
 				C3828B82287DB1E80040D3F4 /* MainViewController.swift in Sources */,
 				C3828B7E287DB1E80040D3F4 /* AppDelegate.swift in Sources */,
 				C3828BC128802C6D0040D3F4 /* DetailPresenter.swift in Sources */,
