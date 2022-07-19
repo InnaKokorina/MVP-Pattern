@@ -25,6 +25,7 @@
 		C3828BC128802C6D0040D3F4 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3828BC028802C6D0040D3F4 /* DetailPresenter.swift */; };
 		C3828BC628803EC70040D3F4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3828BC428803EC70040D3F4 /* DetailViewController.swift */; };
 		C3828BC728803EC70040D3F4 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3828BC528803EC70040D3F4 /* DetailViewController.xib */; };
+		C3AEF51F2886D4B400E678EE /* RouterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AEF51E2886D4B400E678EE /* RouterTest.swift */; };
 		C3ED201C28804AC1009F5D7F /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3ED201B28804AC1009F5D7F /* Router.swift */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +69,7 @@
 		C3828BC028802C6D0040D3F4 /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
 		C3828BC428803EC70040D3F4 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		C3828BC528803EC70040D3F4 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		C3AEF51E2886D4B400E678EE /* RouterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterTest.swift; sourceTree = "<group>"; };
 		C3ED201B28804AC1009F5D7F /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -181,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				C3828BBA287EE5B00040D3F4 /* MainPresenterTest.swift */,
+				C3AEF51E2886D4B400E678EE /* RouterTest.swift */,
 			);
 			path = TestMainModule;
 			sourceTree = "<group>";
@@ -380,6 +383,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3828B95287DB1ED0040D3F4 /* MVP_PatternTests.swift in Sources */,
+				C3AEF51F2886D4B400E678EE /* RouterTest.swift in Sources */,
 				C3828BBB287EE5B00040D3F4 /* MainPresenterTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
